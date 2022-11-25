@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity(){
     var sharedPref: SharedPreferences? =null
     private val PREFS_NAME = "sharedpref"
     lateinit var offline_data: ArrayList<Data>
+    lateinit var offline_data2: ArrayList<Data>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -172,7 +173,7 @@ class MainActivity : AppCompatActivity(){
 
 
 
-    fun callApi() {
+  /*  fun callApi() {
         val retrofit = ApiInterface
         val api = retrofit.create()
         val call: Call<ArrayList<Data>> = api.getData()
@@ -193,7 +194,7 @@ class MainActivity : AppCompatActivity(){
                 println("Throwable:"+t.toString())
             }
         })
-    }
+    }*/
 
     private fun listData(list: ArrayList<Data>) {
         if (list != null && list.size > 0) {
