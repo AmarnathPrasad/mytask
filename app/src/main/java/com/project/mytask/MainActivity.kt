@@ -84,12 +84,12 @@ class MainActivity : AppCompatActivity(){
     private fun apiCall2() {
         if (checkForInternet(this)){
             Log.d("Present ","Internet Connection")
-            Toast.makeText(this@MainActivity, "Network Available", Toast.LENGTH_LONG).show()
+           // Toast.makeText(this@MainActivity, "Network Available", Toast.LENGTH_LONG).show()
 
              setApiData()
         }else {
             Log.d("Sorry ","No Internet Connection")
-            Toast.makeText(this@MainActivity, "Network Not Available", Toast.LENGTH_LONG).show()
+           // Toast.makeText(this@MainActivity, "Network Not Available", Toast.LENGTH_LONG).show()
 
            /* if(offline_data != null && !offline_data.isEmpty()){
                 getApiData()
